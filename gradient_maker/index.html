@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Background Generator</h1>
+    <div class="color-inputs">
+      <input type="color" id="color1" name="color1" value="#ff0000">
+      <input type="color" id="color2" name="color2" value="#0000ff">
+      <select id="direction">
+        <option value="to right">Left to Right</option>
+        <option value="to left">Right to Left</option>
+        <option value="to top">Bottom to Top</option>
+        <option value="to bottom">Top to Bottom</option>
+        <option value="to top right">Diagonal (Top Right)</option>
+        <option value="to bottom right">Diagonal (Bottom Right)</option>
+      </select>
+    </div>
+    <p id="cssOutput"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
