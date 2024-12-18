@@ -1,5 +1,5 @@
 document.getElementById('calorie-form').addEventListener('submit', function(e) {
-    e.preventDefault();
+    e.preventDefault(); 
 
     // Get user input
     const age = document.getElementById('age').value;
