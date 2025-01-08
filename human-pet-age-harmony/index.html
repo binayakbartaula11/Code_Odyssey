@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Age Comparator with Pets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Human Age Comparator With Pets, Yours Favorite Companion</h1>
+        <form id="ageForm">
+            <label for="age">Enter Your Pet's Age (in years):</label>
+            <input type="number" step="0.001" id="age" name="age" min="1" required>
+
+            <label for="pet">Select Your Pet:</label>
+            <select id="pet" name="pet">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="canary">Canary</option>
+                <option value="parrot">Parrot</option>
+                <option value="horse">Horse</option>
+                <option value="rabbit">Rabbit</option>
+                <option value="goldfish">Goldfish</option>
+                <option value="guinea_pig">Guinea Pig</option>
+                <option value="pigeon">Pigeon</option>
+                <option value="ferret">Ferret</option>
+                <option value="cow">Cow</option>
+                <option value="buffalo">Buffalo</option>
+                <option value="chicken">Chicken</option>
+                <option value="deer">Deer</option>
+                <option value="goat">Goat</option>
+                <option value="tiger">Tiger</option>
+                <option value="leopard">Leopard</option>
+                <option value="rhino">Rhino</option>
+                <option value="elephant">Elephant</option>
+            </select>
+
+            <button type="submit">Compare Age</button>
+        </form>
+
+        <div id="result" class="result"></div>
+
+        <div id="imageContainer" class="image-container"></div>
+
+        <div id="petDetails" class="pet-details">
+            <!-- Detailed description, breeds, history, cost, and food -->
+            <h2>Pet Details</h2>
+            <p id="description"></p>
+            <p><strong>Popular Breeds:</strong> <span id="breeds"></span></p>
+            <p><strong>History:</strong> <span id="history"></span></p>
+            <p><strong>Estimated Cost:</strong> <span id="cost"></span></p>
+            <p><strong>Food Type:</strong> <span id="food"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
